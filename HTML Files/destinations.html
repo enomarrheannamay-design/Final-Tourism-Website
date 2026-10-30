@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | MIMAROPA</title>
+    <!-- Styling is in style.css. All photos and videos are in this HTML file:
+         look for the IMAGE / VIDEO comments to see where each one is. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MIMAROPA</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="history.html">History &amp; Culture</a></li>
+                <li><a href="plan-trip.html">Plan Your Trip</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO (same design as the home page) ================= -->
+    <section class="hero page-hero">
+        <!-- HERO PHOTO: Assets Folder/Images/elnido.jpg -->
+        <img class="page-hero-img" src="../Assets%20Folder/Images/mimaropa-hero.jpg" alt="">
+
+        <div class="hero-content">
+            <span class="hero-tag">Region IV-B &bull; Philippines</span>
+            <h1>Popular <span>Destinations</span></h1>
+            <p>Discover the beautiful places across all five provinces of MIMAROPA.</p>
+        </div>
+
+        <!-- Animated waves -->
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none"
+            shape-rendering="auto">
+            <defs>
+                <path id="wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+            </defs>
+            <g class="wave-layer">
+                <use href="#wave" x="48" y="0" fill="rgba(46,196,182,0.7)" />
+                <use href="#wave" x="48" y="3" fill="rgba(10,124,134,0.5)" />
+                <use href="#wave" x="48" y="5" fill="rgba(253,243,224,0.6)" />
+                <use href="#wave" x="48" y="7" fill="#fdf3e0" />
+            </g>
+        </svg>
+    </section>
+
+    <!-- Jump links -->
+    <nav class="jump">
+        <strong>Jump to:</strong>
+        <a href="#palawan">🐢 Palawan</a>
+        <a href="#occidental-mindoro">🌊 Occidental Mindoro</a>
+        <a href="#oriental-mindoro">🌴 Oriental Mindoro</a>
+        <a href="#marinduque">🎭 Marinduque</a>
+        <a href="#romblon">⛰️ Romblon</a>
+    </nav>
+
+    <!-- Destinations
+         Each card uses a looping muted video (Assets Folder/Videos/<name>.mp4).
+         The photo (Assets Folder/Images/<name>.jpg) is the poster shown while loading
+         or if the video is missing. -->
+    <main class="section">
+
+        <!-- ================= PALAWAN ================= -->
+        <header class="province-banner pb-palawan" id="palawan">
+            <span class="pb-icon">🐢</span>
+            <div>
+                <h2>Palawan</h2>
+                <p>Limestone cliffs, hidden lagoons and world-class reefs.</p>
+            </div>
+            <span class="pb-count">9 places</span>
+        </header>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">01</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/puerto-princesa.mp4 (poster image: Assets Folder/Images/puerto-princesa.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/puerto-princesa.jpg" aria-label="Puerto Princesa">
+                    <source src="../Assets%20Folder/Videos/puerto-princesa.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Palawan</span>
+            </div>
+            <div class="card-body">
+                <h2>Puerto Princesa</h2>
+                <p>
+                    Puerto Princesa is a popular destination in Palawan known for its natural attractions and beautiful surroundings. It is home to the Underground River, a UNESCO World Heritage Site, and offers a peaceful island environment.
+                </p>
+                <div class="tags">
+                    <span>🌿 Nature</span>
+                    <span>🚣 Underground River</span>
+                    <span>📸 Scenic</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">02</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/honda-bay.mp4 (poster image: Assets Folder/Images/honda-bay.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/honda-bay.jpg" aria-label="Honda Bay">
+                    <source src="../Assets%20Folder/Videos/honda-bay.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Puerto Princesa, Palawan</span>
+            </div>
+            <div class="card-body">
+                <h2>Honda Bay</h2>
+                <p>
+                    Honda Bay is a favorite island-hopping spot near Puerto Princesa, with small islands, sandbars, and clear shallow water that are perfect for swimming and snorkeling.
+                </p>
+                <div class="tags">
+                    <span>⛵ Island Hopping</span>
+                    <span>🤿 Snorkeling</span>
+                    <span>🏖️ Sandbars</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">03</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/elnido.mp4 (poster image: Assets Folder/Images/elnido.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/elnido.jpg" aria-label="El Nido">
+                    <source src="../Assets%20Folder/Videos/elnido.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Palawan</span>
+            </div>
+            <div class="card-body">
+                <h2>El Nido</h2>
+                <p>
+                    El Nido is known for its beautiful islands, clear waters, lagoons, and limestone landscapes. It is a popular place for island exploration and outdoor activities.
+                </p>
+                <div class="tags">
+                    <span>🤿 Snorkeling</span>
+                    <span>🛶 Lagoons</span>
+                    <span>⛵ Island Hopping</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">04</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/coron.mp4 (poster image: Assets Folder/Images/coron.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/coron.jpg" aria-label="Coron">
+                    <source src="../Assets%20Folder/Videos/coron.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Busuanga, Palawan</span>
+            </div>
+            <div class="card-body">
+                <h2>Coron</h2>
+                <p>
+                    Coron is famous for its turquoise lakes, rugged limestone islands, and World War II shipwrecks that attract divers from around the world. Kayangan Lake and Twin Lagoon are among its best-known sights.
+                </p>
+                <div class="tags">
+                    <span>🚢 Wreck Diving</span>
+                    <span>💧 Lakes</span>
+                    <span>🌋 Limestone</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">05</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/port-barton.mp4 (poster image: Assets Folder/Images/port-barton.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/port-barton.jpg" aria-label="Port Barton">
+                    <source src="../Assets%20Folder/Videos/port-barton.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 San Vicente, Palawan</span>
+            </div>
+            <div class="card-body">
+                <h2>Port Barton</h2>
+                <p>
+                    Port Barton is a relaxed seaside village with calm bays, nearby islands, and snorkeling spots. It is a quieter alternative for travelers who want to slow down.
+                </p>
+                <div class="tags">
+                    <span>🧘 Relaxing</span>
+                    <span>🐠 Snorkeling</span>
+                    <span>💦 Waterfalls</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">06</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/culion.mp4 (poster image: Assets Folder/Images/culion.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/culion.jpg" aria-label="Culion">
+                    <source src="../Assets%20Folder/Videos/culion.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Culion, Palawan</span>
+            </div>
+            <div class="card-body">
+                <h2>Culion</h2>
+                <p>
+                    Culion is an island with a rich and meaningful history. Visitors can learn about its past at the Culion Museum and Archives and enjoy its quiet coves and scenic views.
+                </p>
+                <div class="tags">
+                    <span>🏛️ History</span>
+                    <span>📚 Museum</span>
+                    <span>🌅 Views</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">07</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/calauit.mp4 (poster image: Assets Folder/Images/calauit.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/calauit.jpg" aria-label="Calauit Safari Park">
+                    <source src="../Assets%20Folder/Videos/calauit.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Calauit, Palawan</span>
+            </div>
+            <div class="card-body">
+                <h2>Calauit Safari Park</h2>
+                <p>
+                    Calauit Safari Park is a wildlife sanctuary where you can see giraffes, zebras, and native Calamian deer roaming freely across open grasslands.
+                </p>
+                <div class="tags">
+                    <span>🦒 Wildlife</span>
+                    <span>🚙 Safari</span>
+                    <span>📸 Photography</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">08</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/tubbataha.mp4 (poster image: Assets Folder/Images/tubbataha.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/tubbataha.jpg" aria-label="Tubbataha Reefs">
+                    <source src="../Assets%20Folder/Videos/tubbataha.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Sulu Sea, Palawan</span>
+            </div>
+            <div class="card-body">
+                <h2>Tubbataha Reefs</h2>
+                <p>
+                    Tubbataha Reefs Natural Park is a UNESCO World Heritage Site in the Sulu Sea and one of the top dive destinations in the Philippines, with sharks, turtles, and rich coral life. It is open to divers only during a limited season.
+                </p>
+                <div class="tags">
+                    <span>🤿 Diving</span>
+                    <span>🦈 Marine Life</span>
+                    <span>🪸 Coral Reef</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">09</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/balabac.mp4 (poster image: Assets Folder/Images/balabac.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/balabac.jpg" aria-label="Balabac">
+                    <source src="../Assets%20Folder/Videos/balabac.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Balabac, Palawan</span>
+            </div>
+            <div class="card-body">
+                <h2>Balabac</h2>
+                <p>
+                    Balabac sits at the southern tip of Palawan and is known for its remote white-sand islands, sandbars, and rare wildlife such as the Philippine mouse-deer.
+                </p>
+                <div class="tags">
+                    <span>🏝️ Remote Islands</span>
+                    <span>🏖️ Sandbars</span>
+                    <span>🦌 Wildlife</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= OCCIDENTAL MINDORO ================= -->
+        <header class="province-banner pb-occ" id="occidental-mindoro">
+            <span class="pb-icon">🌊</span>
+            <div>
+                <h2>Occidental Mindoro</h2>
+                <p>Remote reefs, wild mountains and rare wildlife.</p>
+            </div>
+            <span class="pb-count">5 places</span>
+        </header>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">10</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/apo-reef.mp4 (poster image: Assets Folder/Images/apo-reef.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/apo-reef.jpg" aria-label="Apo Reef">
+                    <source src="../Assets%20Folder/Videos/apo-reef.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Sablayan, Occidental Mindoro</span>
+            </div>
+            <div class="card-body">
+                <h2>Apo Reef</h2>
+                <p>
+                    Apo Reef Natural Park is one of the largest coral reef systems in the Philippines. Divers and snorkelers come here to see sharks, sea turtles, and colorful marine life.
+                </p>
+                <div class="tags">
+                    <span>🤿 Diving</span>
+                    <span>🐢 Sea Turtles</span>
+                    <span>🪸 Coral Reef</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">11</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/sablayan.mp4 (poster image: Assets Folder/Images/sablayan.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/sablayan.jpg" aria-label="Sablayan">
+                    <source src="../Assets%20Folder/Videos/sablayan.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Sablayan, Occidental Mindoro</span>
+            </div>
+            <div class="card-body">
+                <h2>Sablayan</h2>
+                <p>
+                    Sablayan is the gateway to Apo Reef. Nearby Pandan Island offers a calm place to swim, snorkel, and relax on the beach.
+                </p>
+                <div class="tags">
+                    <span>🏝️ Pandan Island</span>
+                    <span>🏊 Swimming</span>
+                    <span>🧘 Relaxing</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">12</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/iglit-baco.mp4 (poster image: Assets Folder/Images/iglit-baco.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/iglit-baco.jpg" aria-label="Mt. Iglit-Baco National Park">
+                    <source src="../Assets%20Folder/Videos/iglit-baco.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Mindoro</span>
+            </div>
+            <div class="card-body">
+                <h2>Mt. Iglit-Baco National Park</h2>
+                <p>
+                    This mountain national park protects the habitat of the tamaraw, a rare dwarf buffalo found only in Mindoro. It is a place for nature lovers and wildlife conservation.
+                </p>
+                <div class="tags">
+                    <span>🦬 Tamaraw</span>
+                    <span>⛰️ Mountains</span>
+                    <span>🌲 Forest</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">13</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/lubang.mp4 (poster image: Assets Folder/Images/lubang.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/lubang.jpg" aria-label="Lubang Islands">
+                    <source src="../Assets%20Folder/Videos/lubang.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Lubang, Occidental Mindoro</span>
+            </div>
+            <div class="card-body">
+                <h2>Lubang Islands</h2>
+                <p>
+                    The Lubang Islands offer quiet beaches, scenic coastlines, and World War II history, making them a good choice for travelers who enjoy off-the-beaten-path trips.
+                </p>
+                <div class="tags">
+                    <span>🏖️ Beaches</span>
+                    <span>🏛️ History</span>
+                    <span>🗺️ Off the Beaten Path</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">14</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/mamburao.mp4 (poster image: Assets Folder/Images/mamburao.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/mamburao.jpg" aria-label="Mamburao">
+                    <source src="../Assets%20Folder/Videos/mamburao.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Mamburao, Occidental Mindoro</span>
+            </div>
+            <div class="card-body">
+                <h2>Mamburao</h2>
+                <p>
+                    Mamburao is the provincial capital of Occidental Mindoro. It is a good base for exploring the coast and the surrounding countryside.
+                </p>
+                <div class="tags">
+                    <span>🏙️ Capital Town</span>
+                    <span>🌅 Sunsets</span>
+                    <span>🍤 Local Food</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= ORIENTAL MINDORO ================= -->
+        <header class="province-banner pb-or" id="oriental-mindoro">
+            <span class="pb-icon">🌴</span>
+            <div>
+                <h2>Oriental Mindoro</h2>
+                <p>Famous beaches, diving spots and mountain adventures.</p>
+            </div>
+            <span class="pb-count">4 places</span>
+        </header>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">15</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/puerto-galera.mp4 (poster image: Assets Folder/Images/puerto-galera.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/puerto-galera.jpg" aria-label="Puerto Galera">
+                    <source src="../Assets%20Folder/Videos/puerto-galera.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Oriental Mindoro</span>
+            </div>
+            <div class="card-body">
+                <h2>Puerto Galera</h2>
+                <p>
+                    Puerto Galera is known for its beaches, coves, and some of the best diving and snorkeling in the country. It sits on the Verde Island Passage, a very biodiverse stretch of sea.
+                </p>
+                <div class="tags">
+                    <span>🏖️ White Beach</span>
+                    <span>🤿 Diving</span>
+                    <span>🐠 Marine Life</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">16</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/calapan.mp4 (poster image: Assets Folder/Images/calapan.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/calapan.jpg" aria-label="Calapan">
+                    <source src="../Assets%20Folder/Videos/calapan.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Calapan, Oriental Mindoro</span>
+            </div>
+            <div class="card-body">
+                <h2>Calapan</h2>
+                <p>
+                    Calapan is the provincial capital and a main entry point by sea. Visitors can learn about the Mangyan indigenous peoples of Mindoro and enjoy the city's local food.
+                </p>
+                <div class="tags">
+                    <span>🎨 Mangyan Culture</span>
+                    <span>⛴️ Gateway</span>
+                    <span>🍲 Local Food</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">17</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/mount-halcon.mp4 (poster image: Assets Folder/Images/mount-halcon.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/mount-halcon.jpg" aria-label="Mount Halcon">
+                    <source src="../Assets%20Folder/Videos/mount-halcon.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Oriental Mindoro</span>
+            </div>
+            <div class="card-body">
+                <h2>Mount Halcon</h2>
+                <p>
+                    Mount Halcon is one of the highest peaks in the Philippines and a challenging trek for experienced hikers, with misty forests and dramatic mountain views.
+                </p>
+                <div class="tags">
+                    <span>🥾 Trekking</span>
+                    <span>⛰️ Mountain</span>
+                    <span>☁️ Views</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">18</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/naujan-lake.mp4 (poster image: Assets Folder/Images/naujan-lake.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/naujan-lake.jpg" aria-label="Naujan Lake">
+                    <source src="../Assets%20Folder/Videos/naujan-lake.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Naujan, Oriental Mindoro</span>
+            </div>
+            <div class="card-body">
+                <h2>Naujan Lake</h2>
+                <p>
+                    Naujan Lake National Park is one of the largest lakes in the Philippines and an important home for migratory and resident birds.
+                </p>
+                <div class="tags">
+                    <span>🐦 Birdwatching</span>
+                    <span>🛶 Lake</span>
+                    <span>🌿 Nature</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= MARINDUQUE ================= -->
+        <header class="province-banner pb-mar" id="marinduque">
+            <span class="pb-icon">🎭</span>
+            <div>
+                <h2>Marinduque</h2>
+                <p>The heart-shaped island of festivals, faith and beaches.</p>
+            </div>
+            <span class="pb-count">5 places</span>
+        </header>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">19</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/boac.mp4 (poster image: Assets Folder/Images/boac.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/boac.jpg" aria-label="Boac">
+                    <source src="../Assets%20Folder/Videos/boac.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Boac, Marinduque</span>
+            </div>
+            <div class="card-body">
+                <h2>Boac</h2>
+                <p>
+                    Boac is the capital of Marinduque and the heart of the famous Moriones Festival during Holy Week. Its hilltop cathedral and old streets show the island's rich culture.
+                </p>
+                <div class="tags">
+                    <span>🎭 Moriones</span>
+                    <span>⛪ Cathedral</span>
+                    <span>🏛️ History</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">20</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/gasan.mp4 (poster image: Assets Folder/Images/gasan.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/gasan.jpg" aria-label="Gasan">
+                    <source src="../Assets%20Folder/Videos/gasan.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Gasan, Marinduque</span>
+            </div>
+            <div class="card-body">
+                <h2>Gasan</h2>
+                <p>
+                    Gasan is a coastal town known for its beaches, its festival celebrations, and its closeness to the Tres Reyes Islands.
+                </p>
+                <div class="tags">
+                    <span>🏖️ Beaches</span>
+                    <span>🎉 Festivals</span>
+                    <span>⛵ Boat Trips</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">21</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/tres-reyes.mp4 (poster image: Assets Folder/Images/tres-reyes.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/tres-reyes.jpg" aria-label="Tres Reyes Islands">
+                    <source src="../Assets%20Folder/Videos/tres-reyes.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Gasan, Marinduque</span>
+            </div>
+            <div class="card-body">
+                <h2>Tres Reyes Islands</h2>
+                <p>
+                    The Tres Reyes Islands are three small islands named Gaspar, Melchor, and Baltazar. They are great for snorkeling, diving, and a quiet island day.
+                </p>
+                <div class="tags">
+                    <span>🏝️ Three Islands</span>
+                    <span>🤿 Snorkeling</span>
+                    <span>🛶 Boat Ride</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">22</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/poctoy-beach.mp4 (poster image: Assets Folder/Images/poctoy-beach.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/poctoy-beach.jpg" aria-label="Poctoy White Beach">
+                    <source src="../Assets%20Folder/Videos/poctoy-beach.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Torrijos, Marinduque</span>
+            </div>
+            <div class="card-body">
+                <h2>Poctoy White Beach</h2>
+                <p>
+                    Poctoy White Beach is a long stretch of pale sand and calm water, popular for swimming, picnics, and sunsets.
+                </p>
+                <div class="tags">
+                    <span>🏖️ White Sand</span>
+                    <span>🌇 Sunsets</span>
+                    <span>🧺 Picnics</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">23</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/mt-malindig.mp4 (poster image: Assets Folder/Images/mt-malindig.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/mt-malindig.jpg" aria-label="Mt. Malindig">
+                    <source src="../Assets%20Folder/Videos/mt-malindig.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Marinduque</span>
+            </div>
+            <div class="card-body">
+                <h2>Mt. Malindig</h2>
+                <p>
+                    Mt. Malindig is a dormant volcano and the highest point on Marinduque, with trails that lead through forest to wide views of the island.
+                </p>
+                <div class="tags">
+                    <span>🌋 Volcano</span>
+                    <span>🥾 Hiking</span>
+                    <span>🌄 Views</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= ROMBLON ================= -->
+        <header class="province-banner pb-rom" id="romblon">
+            <span class="pb-icon">⛰️</span>
+            <div>
+                <h2>Romblon</h2>
+                <p>The marble islands of beaches, forts and wild mountains.</p>
+            </div>
+            <span class="pb-count">7 places</span>
+        </header>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">24</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/romblon.mp4 (poster image: Assets Folder/Images/romblon.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/romblon.jpg" aria-label="Romblon">
+                    <source src="../Assets%20Folder/Videos/romblon.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Romblon</span>
+            </div>
+            <div class="card-body">
+                <h2>Romblon</h2>
+                <p>
+                    Romblon is known for its islands, beaches, natural scenery, and marble industry. Visitors can experience both its natural attractions and local culture, including the old Fort San Andres.
+                </p>
+                <div class="tags">
+                    <span>🗿 Marble</span>
+                    <span>🏰 Fort San Andres</span>
+                    <span>🎨 Culture</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">25</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/bonbon-beach.mp4 (poster image: Assets Folder/Images/bonbon-beach.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/bonbon-beach.jpg" aria-label="Bonbon Beach">
+                    <source src="../Assets%20Folder/Videos/bonbon-beach.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Romblon Island</span>
+            </div>
+            <div class="card-body">
+                <h2>Bonbon Beach</h2>
+                <p>
+                    Bonbon Beach is a scenic stretch of sand on Romblon Island, known for its calm water and beautiful views.
+                </p>
+                <div class="tags">
+                    <span>🏖️ Beach</span>
+                    <span>🏊 Swimming</span>
+                    <span>📸 Scenic</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">26</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/sibuyan.mp4 (poster image: Assets Folder/Images/sibuyan.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/sibuyan.jpg" aria-label="Sibuyan Island">
+                    <source src="../Assets%20Folder/Videos/sibuyan.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Sibuyan Island, Romblon</span>
+            </div>
+            <div class="card-body">
+                <h2>Sibuyan Island</h2>
+                <p>
+                    Sibuyan Island is often called the "Galapagos of Asia" for its rich wildlife. It is home to Mt. Guiting-Guiting and the clear waters of Cantingas River.
+                </p>
+                <div class="tags">
+                    <span>⛰️ Guiting-Guiting</span>
+                    <span>💧 Cantingas River</span>
+                    <span>🦎 Biodiversity</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">27</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/banton.mp4 (poster image: Assets Folder/Images/banton.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/banton.jpg" aria-label="Banton Island">
+                    <source src="../Assets%20Folder/Videos/banton.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Banton, Romblon</span>
+            </div>
+            <div class="card-body">
+                <h2>Banton Island</h2>
+                <p>
+                    Banton Island is known for its history, including an ancient burial cave and the traditional Banton cloth. It also has quiet beaches and coves.
+                </p>
+                <div class="tags">
+                    <span>🏛️ History</span>
+                    <span>🧵 Banton Cloth</span>
+                    <span>🏝️ Coves</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">28</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/carabao-island.mp4 (poster image: Assets Folder/Images/carabao-island.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/carabao-island.jpg" aria-label="Carabao Island">
+                    <source src="../Assets%20Folder/Videos/carabao-island.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Near Tablas, Romblon</span>
+            </div>
+            <div class="card-body">
+                <h2>Carabao Island</h2>
+                <p>
+                    Carabao Island is a laid-back island with white beaches and clear water, a great place to unwind away from the crowds.
+                </p>
+                <div class="tags">
+                    <span>🏖️ White Beach</span>
+                    <span>🧘 Relaxing</span>
+                    <span>🐠 Snorkeling</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal left">
+            <span class="card-number">29</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/cobrador.mp4 (poster image: Assets Folder/Images/cobrador.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/cobrador.jpg" aria-label="Cobrador Island">
+                    <source src="../Assets%20Folder/Videos/cobrador.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Romblon</span>
+            </div>
+            <div class="card-body">
+                <h2>Cobrador Island</h2>
+                <p>
+                    Cobrador Island is a small island known for its white sand and peaceful atmosphere, perfect for a day trip by boat.
+                </p>
+                <div class="tags">
+                    <span>🏝️ Small Island</span>
+                    <span>🛶 Day Trip</span>
+                    <span>🌅 Quiet</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-card reveal right">
+            <span class="card-number">30</span>
+            <div class="card-img">
+                <!-- CARD VIDEO: Assets Folder/Videos/tablas.mp4 (poster image: Assets Folder/Images/tablas.jpg) -->
+                <video autoplay muted loop playsinline preload="none" poster="../Assets%20Folder/Images/tablas.jpg" aria-label="Tablas Island">
+                    <source src="../Assets%20Folder/Videos/tablas.mp4" type="video/mp4">
+                </video>
+                <span class="location">📍 Tablas Island, Romblon</span>
+            </div>
+            <div class="card-body">
+                <h2>Tablas Island</h2>
+                <p>
+                    Tablas is the largest island in Romblon, with towns like Odiongan, beaches, waterfalls, and countryside views.
+                </p>
+                <div class="tags">
+                    <span>🏞️ Countryside</span>
+                    <span>💦 Waterfalls</span>
+                    <span>🏘️ Island Towns</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="cta">
+        <div class="sun"></div>
+        <div class="cta-inner reveal">
+            <h2>Found Your Favorite Island?</h2>
+            <p>Start planning your MIMAROPA adventure today.</p>
+            <a href="plan-trip.html" class="button pulse">Plan Your Trip</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Gonzaga MIMAROPA Tourism Website</p>
+        <p>Email: mimaropa@example.com</p>
+    </footer>
+
+</body>
+</html>

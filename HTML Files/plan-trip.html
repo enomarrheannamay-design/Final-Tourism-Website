@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip | MIMAROPA</title>
+    <!-- Styling is in style.css. All photos and videos are in this HTML file:
+         look for the IMAGE / VIDEO comments to see where each one is. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MIMAROPA</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="history.html">History &amp; Culture</a></li>
+                <li><a href="plan-trip.html">Plan Your Trip</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO (same design as the home page) ================= -->
+    <section class="hero page-hero">
+        <!-- HERO PHOTO: Assets Folder/Images/PlanTrip-back.jpg -->
+        <img class="page-hero-img" src="../Assets%20Folder/Images/PlanTrip-back.jpg" alt="">
+
+        <div class="hero-content">
+            <span class="hero-tag">Region IV-B &bull; Philippines</span>
+            <h1>Plan Your <span>Trip</span></h1>
+            <p>Use this simple guide to help plan your MIMAROPA adventure.</p>
+        </div>
+
+        <!-- Animated waves -->
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none"
+            shape-rendering="auto">
+            <defs>
+                <path id="wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+            </defs>
+            <g class="wave-layer">
+                <use href="#wave" x="48" y="0" fill="rgba(46,196,182,0.7)" />
+                <use href="#wave" x="48" y="3" fill="rgba(10,124,134,0.5)" />
+                <use href="#wave" x="48" y="5" fill="rgba(253,243,224,0.6)" />
+                <use href="#wave" x="48" y="7" fill="#fdf3e0" />
+            </g>
+        </svg>
+    </section>
+
+    <!-- Jump links -->
+    <nav class="jump">
+        <strong>Jump to:</strong>
+        <a href="#itinerary">🗺️ Itinerary</a>
+        <a href="#when">☀️ When to Go</a>
+        <a href="#getting-there">✈️ Getting There</a>
+        <a href="#budget">💰 Budget</a>
+        <a href="#tips">💡 Tips</a>
+        <a href="#packing">🎒 Packing</a>
+        <a href="#faq">❓ FAQ</a>
+        <a href="#contact">✉️ Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- ================= QUICK FACTS ================= -->
+        <section class="section">
+            <span class="eyebrow center">Know Before You Go</span>
+            <h2 class="reveal">Trip Planner at a Glance</h2>
+            <p class="section-sub reveal">Five provinces, one island-hopping adventure.</p>
+
+            <div class="features">
+                <div class="feature reveal">
+                    <span class="icon">🗓️</span>
+                    <h3>3 to 7 Days</h3>
+                    <p>A short trip covers one province well.</p>
+                </div>
+                <div class="feature reveal">
+                    <span class="icon">⛴️</span>
+                    <h3>Boats &amp; Planes</h3>
+                    <p>Most islands are reached by ferry or flight.</p>
+                </div>
+                <div class="feature reveal">
+                    <span class="icon">💵</span>
+                    <h3>Bring Cash</h3>
+                    <p>ATMs can be scarce on smaller islands.</p>
+                </div>
+                <div class="feature reveal">
+                    <span class="icon">🌤️</span>
+                    <h3>Dry Season</h3>
+                    <p>Calmer seas and sunnier days for island trips.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="band">
+
+            <!-- ================= ITINERARY ================= -->
+            <section class="section" id="itinerary">
+                <span class="eyebrow center">Sample Plans</span>
+                <h2 class="reveal">3-Day Itineraries</h2>
+                <p class="section-sub reveal">Pick a trip style and see a day-by-day plan.</p>
+
+                <!-- CSS-only tabs -->
+                <div class="tabs reveal">
+
+                    <input type="radio" name="trip" id="trip1" checked>
+                    <input type="radio" name="trip" id="trip2">
+                    <input type="radio" name="trip" id="trip3">
+                    <input type="radio" name="trip" id="trip4">
+
+                    <div class="tab-labels">
+                        <label for="trip1">🐢 Palawan Escape</label>
+                        <label for="trip2">🤿 Mindoro Beach &amp; Dive</label>
+                        <label for="trip3">🎭 Marinduque Culture</label>
+                        <label for="trip4">🗿 Romblon Islands</label>
+                    </div>
+
+                    <div class="tab-panels">
+
+                        <!-- Palawan -->
+                        <div class="panel panel-1">
+                            <p class="panel-intro">Limestone cliffs, clear lagoons, and sunsets in <strong>El Nido</strong>.</p>
+                            <div class="day-grid">
+                                <div class="day-card">
+                                    <span class="day-badge">Day 1</span>
+                                    <h3>Arrive &amp; Unwind</h3>
+                                    <ul>
+                                        <li><span>🌅</span> Arrive and check in</li>
+                                        <li><span>🏖️</span> Stroll along the town beach</li>
+                                        <li><span>🍤</span> Fresh seafood dinner</li>
+                                    </ul>
+                                </div>
+                                <div class="day-card">
+                                    <span class="day-badge">Day 2</span>
+                                    <h3>Island Hopping</h3>
+                                    <ul>
+                                        <li><span>⛵</span> Join a boat tour to the lagoons</li>
+                                        <li><span>🤿</span> Snorkel in clear water</li>
+                                        <li><span>🌇</span> Watch the sunset from the shore</li>
+                                    </ul>
+                                </div>
+                                <div class="day-card">
+                                    <span class="day-badge">Day 3</span>
+                                    <h3>Beach &amp; Souvenirs</h3>
+                                    <ul>
+                                        <li><span>🏝️</span> Relax at a quiet beach</li>
+                                        <li><span>🛍️</span> Buy local souvenirs</li>
+                                        <li><span>✈️</span> Head to the airport or port</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mindoro -->
+                        <div class="panel panel-2">
+                            <p class="panel-intro">Beaches, coves, and marine life around <strong>Puerto Galera</strong> and Oriental Mindoro.</p>
+                            <div class="day-grid">
+                                <div class="day-card">
+                                    <span class="day-badge">Day 1</span>
+                                    <h3>Ferry &amp; Beach</h3>
+                                    <ul>
+                                        <li><span>⛴️</span> Take the ferry and check in</li>
+                                        <li><span>🏖️</span> Swim at the beach</li>
+                                        <li><span>🍹</span> Sunset drinks by the sea</li>
+                                    </ul>
+                                </div>
+                                <div class="day-card">
+                                    <span class="day-badge">Day 2</span>
+                                    <h3>Dive &amp; Snorkel</h3>
+                                    <ul>
+                                        <li><span>🤿</span> Try a dive or snorkel trip</li>
+                                        <li><span>🐠</span> See colorful marine life</li>
+                                        <li><span>🛶</span> Explore quiet coves by boat</li>
+                                    </ul>
+                                </div>
+                                <div class="day-card">
+                                    <span class="day-badge">Day 3</span>
+                                    <h3>Culture &amp; Return</h3>
+                                    <ul>
+                                        <li><span>🎨</span> Learn about Mangyan culture</li>
+                                        <li><span>🍲</span> Try local dishes</li>
+                                        <li><span>⛴️</span> Ferry back</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Marinduque -->
+                        <div class="panel panel-3">
+                            <p class="panel-intro">Heritage, faith, and island beaches in <strong>Marinduque</strong>.</p>
+                            <div class="day-grid">
+                                <div class="day-card">
+                                    <span class="day-badge">Day 1</span>
+                                    <h3>Boac &amp; Heritage</h3>
+                                    <ul>
+                                        <li><span>⛪</span> Visit the hilltop cathedral</li>
+                                        <li><span>🏛️</span> Walk through the old town</li>
+                                        <li><span>🎭</span> Learn about the Moriones masks</li>
+                                    </ul>
+                                </div>
+                                <div class="day-card">
+                                    <span class="day-badge">Day 2</span>
+                                    <h3>Tres Reyes Islands</h3>
+                                    <ul>
+                                        <li><span>🛶</span> Take a boat to the islands</li>
+                                        <li><span>🤿</span> Snorkel and swim</li>
+                                        <li><span>🧺</span> Picnic on the beach</li>
+                                    </ul>
+                                </div>
+                                <div class="day-card">
+                                    <span class="day-badge">Day 3</span>
+                                    <h3>Beach &amp; Treats</h3>
+                                    <ul>
+                                        <li><span>🏖️</span> Relax at Poctoy White Beach</li>
+                                        <li><span>🍪</span> Buy uraro cookies</li>
+                                        <li><span>⛴️</span> Head to the port</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Romblon -->
+                        <div class="panel panel-4">
+                            <p class="panel-intro">Marble, forts, and quiet beaches in <strong>Romblon</strong>.</p>
+                            <div class="day-grid">
+                                <div class="day-card">
+                                    <span class="day-badge">Day 1</span>
+                                    <h3>Romblon Town</h3>
+                                    <ul>
+                                        <li><span>🏰</span> Climb up to Fort San Andres</li>
+                                        <li><span>🗿</span> Visit marble workshops</li>
+                                        <li><span>🍽️</span> Dinner by the harbor</li>
+                                    </ul>
+                                </div>
+                                <div class="day-card">
+                                    <span class="day-badge">Day 2</span>
+                                    <h3>Beaches</h3>
+                                    <ul>
+                                        <li><span>🏖️</span> Swim at Bonbon Beach</li>
+                                        <li><span>🛵</span> Explore the island by tricycle or scooter</li>
+                                        <li><span>📸</span> Chase scenic viewpoints</li>
+                                    </ul>
+                                </div>
+                                <div class="day-card">
+                                    <span class="day-badge">Day 3</span>
+                                    <h3>Island Day Trip</h3>
+                                    <ul>
+                                        <li><span>🛶</span> Take a boat to a nearby island</li>
+                                        <li><span>🐠</span> Snorkel in clear water</li>
+                                        <li><span>🛍️</span> Buy marble souvenirs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Original simple overview -->
+                <div class="content-box reveal overview-box">
+                    <h2>Simple 3-Day Overview</h2>
+
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>Activities</th>
+                            <th>Plan</th>
+                        </tr>
+
+                        <tr>
+                            <td>Day 1</td>
+                            <td>Explore</td>
+                            <td>
+                                Arrive, check in, explore the local area,
+                                and visit nearby attractions.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Day 2</td>
+                            <td>Island Adventure</td>
+                            <td>
+                                Enjoy island hopping, swimming, sightseeing,
+                                and other outdoor activities.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Day 3</td>
+                            <td>Culture &amp; Food</td>
+                            <td>
+                                Visit cultural attractions, try local food,
+                                buy souvenirs, and prepare for departure.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- ================= WHEN TO GO ================= -->
+            <section class="section" id="when">
+                <span class="eyebrow center">Seasons</span>
+                <h2 class="reveal">When to Go</h2>
+                <p class="section-sub reveal">The dry months usually bring calmer seas and clearer skies.</p>
+
+                <div class="season reveal">
+                    <div class="months">
+                        <div class="month best"><strong>Jan</strong><span>☀️</span></div>
+                        <div class="month best"><strong>Feb</strong><span>☀️</span></div>
+                        <div class="month best"><strong>Mar</strong><span>☀️</span></div>
+                        <div class="month best"><strong>Apr</strong><span>☀️</span></div>
+                        <div class="month best"><strong>May</strong><span>☀️</span></div>
+                        <div class="month wet"><strong>Jun</strong><span>🌧️</span></div>
+                        <div class="month wet"><strong>Jul</strong><span>🌧️</span></div>
+                        <div class="month wet"><strong>Aug</strong><span>🌧️</span></div>
+                        <div class="month wet"><strong>Sep</strong><span>🌧️</span></div>
+                        <div class="month wet"><strong>Oct</strong><span>🌧️</span></div>
+                        <div class="month ok"><strong>Nov</strong><span>⛅</span></div>
+                        <div class="month best"><strong>Dec</strong><span>☀️</span></div>
+                    </div>
+
+                    <div class="legend">
+                        <span><i class="dot best"></i> Best weather</span>
+                        <span><i class="dot ok"></i> Mixed weather</span>
+                        <span><i class="dot wet"></i> Rainy season, possible typhoons</span>
+                    </div>
+
+                    <p class="season-note">
+                        This is a general guide and weather varies by province, so check the
+                        forecast before you travel. Holy Week is a good time to see the
+                        Moriones Festival in Marinduque, but expect crowds and book early.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ================= GETTING THERE ================= -->
+            <section class="section" id="getting-there">
+                <span class="eyebrow center">Transport</span>
+                <h2 class="reveal">Getting There &amp; Around</h2>
+                <p class="section-sub reveal">Islands mean planes, boats, and a little patience.</p>
+
+                <div class="transport-grid">
+
+                    <div class="transport-card tc1 reveal">
+                        <div class="tc-icon">✈️</div>
+                        <h3>By Air</h3>
+                        <p>
+                            Palawan has airports at Puerto Princesa, El Nido, and Busuanga (for Coron). Romblon is also reached by air. Check airlines for current routes.
+                        </p>
+                    </div>
+
+                    <div class="transport-card tc2 reveal">
+                        <div class="tc-icon">⛴️</div>
+                        <h3>By Ferry</h3>
+                        <p>
+                            Ferries and roll-on roll-off boats link Luzon ports, such as Batangas and Lucena, to Mindoro, Marinduque, and Romblon.
+                        </p>
+                    </div>
+
+                    <div class="transport-card tc3 reveal">
+                        <div class="tc-icon">🚐</div>
+                        <h3>By Land</h3>
+                        <p>
+                            Vans, jeepneys, buses, and tricycles connect towns on each island. Long road trips can take several hours.
+                        </p>
+                    </div>
+
+                    <div class="transport-card tc4 reveal">
+                        <div class="tc-icon">🛥️</div>
+                        <h3>By Boat Tour</h3>
+                        <p>
+                            Local outrigger boats take you island hopping. Book with a licensed, local operator and wear a life vest.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ================= BUDGET ================= -->
+            <section class="section" id="budget">
+                <span class="eyebrow center">Your Budget</span>
+                <h2 class="reveal">Budget Guide</h2>
+                <p class="section-sub reveal">Choose the travel style that fits you. Prices change, so check current rates.</p>
+
+                <div class="budget-grid">
+
+                    <div class="budget-card bg1 reveal">
+                        <span class="b-icon">🎒</span>
+                        <h3>Backpacker</h3>
+                        <ul>
+                            <li>Hostels and simple guesthouses</li>
+                            <li>Local eateries and market food</li>
+                            <li>Shared tours and public transport</li>
+                        </ul>
+                    </div>
+
+                    <div class="budget-card bg2 featured reveal">
+                        <span class="b-tag">Popular</span>
+                        <span class="b-icon">🏝️</span>
+                        <h3>Comfort</h3>
+                        <ul>
+                            <li>Beach resorts and private rooms</li>
+                            <li>Mix of local and nicer restaurants</li>
+                            <li>Private boat or van transfers</li>
+                        </ul>
+                    </div>
+
+                    <div class="budget-card bg3 reveal">
+                        <span class="b-icon">💎</span>
+                        <h3>Luxury</h3>
+                        <ul>
+                            <li>Island resorts with private beaches</li>
+                            <li>Fine dining and sunset cruises</li>
+                            <li>Private tours and flights</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <p class="budget-note reveal">
+                    💡 Money tip: bring enough cash, because ATMs and card payments are
+                    limited on smaller islands.
+                </p>
+            </section>
+
+            <!-- ================= TRAVEL TIPS ================= -->
+            <section class="section" id="tips">
+                <span class="eyebrow center">Good Habits</span>
+                <h2 class="reveal">Travel Tips</h2>
+                <p class="section-sub reveal">Small habits that make for a smoother, kinder trip.</p>
+
+                <div class="tips-grid">
+
+                    <div class="tip-card reveal">
+                        <span class="tip-icon">🌦️</span>
+                        <p>Check the weather before traveling.</p>
+                    </div>
+
+                    <div class="tip-card reveal">
+                        <span class="tip-icon">💧</span>
+                        <p>Bring enough drinking water.</p>
+                    </div>
+
+                    <div class="tip-card reveal">
+                        <span class="tip-icon">🤝</span>
+                        <p>Respect local communities and traditions.</p>
+                    </div>
+
+                    <div class="tip-card reveal">
+                        <span class="tip-icon">🧹</span>
+                        <p>Keep tourist areas clean.</p>
+                    </div>
+
+                    <div class="tip-card reveal">
+                        <span class="tip-icon">🦺</span>
+                        <p>Follow local travel and safety guidelines.</p>
+                    </div>
+
+                    <div class="tip-card reveal">
+                        <span class="tip-icon">🪪</span>
+                        <p>Keep important documents safe.</p>
+                    </div>
+
+                    <div class="tip-card reveal">
+                        <span class="tip-icon">🪸</span>
+                        <p>Do not touch or step on corals or marine life.</p>
+                    </div>
+
+                    <div class="tip-card reveal">
+                        <span class="tip-icon">🛍️</span>
+                        <p>Support local guides, shops, and food stalls.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ================= PACKING ================= -->
+            <section class="section" id="packing">
+                <span class="eyebrow center">Pack Right</span>
+                <h2 class="reveal">Packing Checklist</h2>
+                <p class="section-sub reveal">Tap an item to check it off.</p>
+
+                <div class="pack-grid">
+
+                    <div class="pack-card pk1 reveal">
+                        <h3>👕 Clothing</h3>
+                        <ul class="checklist">
+                            <li><label><input type="checkbox"><span>Extra clothes</span></label></li>
+                            <li><label><input type="checkbox"><span>Comfortable shoes</span></label></li>
+                            <li><label><input type="checkbox"><span>Swimwear</span></label></li>
+                            <li><label><input type="checkbox"><span>Hat and sunglasses</span></label></li>
+                        </ul>
+                    </div>
+
+                    <div class="pack-card pk2 reveal">
+                        <h3>🏖️ Beach &amp; Water</h3>
+                        <ul class="checklist">
+                            <li><label><input type="checkbox"><span>Sunscreen</span></label></li>
+                            <li><label><input type="checkbox"><span>Water bottle</span></label></li>
+                            <li><label><input type="checkbox"><span>Dry bag for your phone and valuables</span></label></li>
+                            <li><label><input type="checkbox"><span>Towel and sandals</span></label></li>
+                        </ul>
+                    </div>
+
+                    <div class="pack-card pk3 reveal">
+                        <h3>🔌 Essentials</h3>
+                        <ul class="checklist">
+                            <li><label><input type="checkbox"><span>Personal hygiene items</span></label></li>
+                            <li><label><input type="checkbox"><span>Phone and charger</span></label></li>
+                            <li><label><input type="checkbox"><span>Power bank</span></label></li>
+                            <li><label><input type="checkbox"><span>Basic medicines and first aid</span></label></li>
+                        </ul>
+                    </div>
+
+                    <div class="pack-card pk4 reveal">
+                        <h3>🪪 Documents &amp; Cash</h3>
+                        <ul class="checklist">
+                            <li><label><input type="checkbox"><span>Identification and important documents</span></label></li>
+                            <li><label><input type="checkbox"><span>Booking confirmations</span></label></li>
+                            <li><label><input type="checkbox"><span>Enough cash</span></label></li>
+                            <li><label><input type="checkbox"><span>Emergency contacts</span></label></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ================= FAQ ================= -->
+            <section class="section" id="faq">
+                <span class="eyebrow center">Got Questions?</span>
+                <h2 class="reveal">Frequently Asked Questions</h2>
+                <p class="section-sub reveal">Tap a question to see the answer.</p>
+
+                <div class="faq">
+
+                    <details class="reveal">
+                        <summary>When is the best time to visit MIMAROPA?</summary>
+                        <p>
+                            The drier months, roughly from December to May, usually bring calmer seas and clearer skies. The rainy season has more storms, and boat trips can be cancelled when the weather is bad.
+                        </p>
+                    </details>
+
+                    <details class="reveal">
+                        <summary>Do I need to book in advance?</summary>
+                        <p>
+                            It is a good idea, especially for flights, ferries, and rooms during holidays, Holy Week, and the dry season when many people travel.
+                        </p>
+                    </details>
+
+                    <details class="reveal">
+                        <summary>Is there mobile signal and internet on the islands?</summary>
+                        <p>
+                            Towns and popular areas usually have signal, but remote islands may have weak or no coverage. Download maps and booking details before you go.
+                        </p>
+                    </details>
+
+                    <details class="reveal">
+                        <summary>Should I bring cash?</summary>
+                        <p>
+                            Yes. Many small shops, boat operators, and eateries accept cash only, and ATMs can be far from beaches and small islands.
+                        </p>
+                    </details>
+
+                    <details class="reveal">
+                        <summary>Can I swim and snorkel anywhere?</summary>
+                        <p>
+                            Only in safe areas. Ask your guide or resort about currents and tides, wear a life vest if you are not a strong swimmer, and never touch the corals.
+                        </p>
+                    </details>
+
+                </div>
+            </section>
+
+            <!-- ================= CONTACT ================= -->
+            <section class="section" id="contact">
+                <span class="eyebrow center">Say Hello</span>
+                <h2 class="reveal">Contact Us</h2>
+                <p class="section-sub reveal">Tell us about your plans and we will help you get started.</p>
+
+                <div class="contact-wrap reveal">
+
+                    <div class="contact-info">
+                        <span class="ci-icon">✉️</span>
+                        <h3>Let's Plan Together</h3>
+                        <p>
+                            Share your dates, group size, and what you would like to see.
+                            We will help you choose where to go.
+                        </p>
+                        <ul>
+                            <li>📧 mimaropa@example.com</li>
+                            <li>🏝️ Five provinces to explore</li>
+                            <li>🗓️ Tell us your planned visit date</li>
+                        </ul>
+                    </div>
+
+                    <div class="form-box">
+                        <form>
+
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                            <div class="form-row">
+                                <div>
+                                    <label for="date">Planned Visit Date</label>
+                                    <input type="date" id="date" name="date">
+                                </div>
+                                <div>
+                                    <label for="travelers">Number of Travelers</label>
+                                    <input type="number" id="travelers" name="travelers" min="1" placeholder="Number of travelers">
+                                </div>
+                            </div>
+
+                            <label for="notes">Questions/Notes</label>
+                            <textarea id="notes" name="notes" rows="5" placeholder="Write your questions or notes here"></textarea>
+
+                            <button type="submit">Send ✈️</button>
+
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="cta">
+        <div class="sun"></div>
+        <div class="cta-inner reveal">
+            <h2>Your Island Adventure Starts Here</h2>
+            <p>Pick a province, pack your bag, and go.</p>
+            <a href="destinations.html" class="button pulse">Explore Destinations</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Gonzaga MIMAROPA Tourism Website</p>
+        <p>Email: mimaropa@example.com</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIMAROPA | Region IV-B</title>
+    <!-- Styling is in style.css. All photos and videos are in this HTML file:
+         look for the IMAGE / VIDEO comments to see where each one is. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MIMAROPA</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="history.html">History &amp; Culture</a></li>
+                <li><a href="plan-trip.html">Plan Your Trip</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+
+        <!-- Background video (falls back to the poster image if it can't play) -->
+        <!-- HERO BACKGROUND VIDEO: Assets Folder/Videos/mimaropa.mp4 or mimaropa.webm (poster image: Assets Folder/Images/mimaropa-hero.jpg) -->
+        <video class="hero-video" autoplay muted loop playsinline preload="auto"
+            poster="../Assets%20Folder/Images/mimaropa-hero.jpg">
+            <source src="../Assets%20Folder/Videos/mimaropa.mp4" type="video/mp4">
+            <source src="../Assets%20Folder/Videos/mimaropa.webm" type="video/webm">
+        </video>
+
+        <div class="hero-content">
+            <span class="hero-tag">Region IV-B &bull; Philippines</span>
+            <h1>Discover <span>MIMAROPA</span></h1>
+            <p>Explore the islands, culture, history, and beauty of Region IV-B.</p>
+            <a href="destinations.html" class="button pulse">Explore Destinations</a>
+
+            <!-- quick links -->
+            <div class="hero-chips">
+                <a href="destinations.html#palawan">🐢 Palawan</a>
+                <a href="activities.html#water">🤿 Diving</a>
+                <a href="history.html#festivals">🎭 Festivals</a>
+                <a href="activities.html#food">🍤 Food</a>
+                <a href="plan-trip.html#when">☀️ When to Go</a>
+            </div>
+        </div>
+
+        <!-- scroll hint -->
+        <div class="scroll-hint" aria-hidden="true"></div>
+
+        <!-- Animated waves -->
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none"
+            shape-rendering="auto">
+            <defs>
+                <path id="wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+            </defs>
+            <g class="wave-layer">
+                <use href="#wave" x="48" y="0" fill="rgba(46,196,182,0.7)" />
+                <use href="#wave" x="48" y="3" fill="rgba(10,124,134,0.5)" />
+                <use href="#wave" x="48" y="5" fill="rgba(253,243,224,0.6)" />
+                <use href="#wave" x="48" y="7" fill="#fdf3e0" />
+            </g>
+        </svg>
+    </section>
+
+    <!-- ================= WELCOME ================= -->
+    <section class="section">
+        <div class="intro-split">
+
+            <div class="intro-text reveal left">
+                <span class="eyebrow">Welcome</span>
+                <h2>Welcome to MIMAROPA</h2>
+
+                <p>
+                    MIMAROPA, also known as Region IV-B, is a region in the Philippines
+                    known for its beautiful islands, beaches, natural attractions, and
+                    rich culture. The name MIMAROPA comes from the provinces of
+                    Mindoro, Marinduque, Romblon, and Palawan.
+                </p>
+
+                <p>
+                    The region offers many places to explore, from beautiful beaches
+                    and islands to historical and cultural attractions. MIMAROPA is a
+                    great destination for travelers who want to experience nature,
+                    adventure, food, and local traditions.
+                </p>
+
+                <a href="history.html" class="text-link">Read our story &rarr;</a>
+            </div>
+
+            <div class="features reveal right">
+                <div class="feature">
+                    <!-- WELCOME CARD PHOTO: Assets Folder/Images/mimaropa-islands.jpg (Islands of MIMAROPA) -->
+                    <img class="feature-img" src="../Assets%20Folder/Images/mimaropa-islands.jpg"
+                        alt="Islands of MIMAROPA">
+                    <h3>Islands</h3>
+                    <p>Hidden coves and white-sand shores.</p>
+                </div>
+                <div class="feature">
+                    <!-- WELCOME CARD PHOTO: Assets Folder/Images/mimaropa-adventure.jpg (Adventure in MIMAROPA) -->
+                    <img class="feature-img" src="../Assets%20Folder/Images/mimaropa-adventure.jpg"
+                        alt="Adventure in MIMAROPA">
+                    <h3>Adventure</h3>
+                    <p>Dive, island-hop and explore.</p>
+                </div>
+                <div class="feature">
+                    <!-- WELCOME CARD PHOTO: Assets Folder/Images/mimaropa-culture.jpg (Culture of MIMAROPA) -->
+                    <img class="feature-img" src="../Assets%20Folder/Images/mimaropa-culture.jpg"
+                        alt="Culture of MIMAROPA">
+                    <h3>Culture</h3>
+                    <p>Festivals, crafts and traditions.</p>
+                </div>
+                <div class="feature">
+                    <!-- WELCOME CARD PHOTO: Assets Folder/Images/mimaropa-food.jpg (Food of MIMAROPA) -->
+                    <img class="feature-img" src="../Assets%20Folder/Images/mimaropa-food.jpg" alt="Food of MIMAROPA">
+                    <h3>Food</h3>
+                    <p>Fresh seafood and local flavors.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= AT A GLANCE (region chart) ================= -->
+    <section class="chart-band">
+        <div class="chart reveal">
+
+            <div class="chart-head">
+                <span class="eyebrow">Know Before You Go</span>
+                <h2>MIMAROPA at a Glance</h2>
+                <p>Five provinces, thousands of islands, one sea-crossed region in the Philippines.</p>
+            </div>
+
+            <!-- passport-style stamps -->
+            <div class="stamps">
+                <div class="stamp st1">
+                    <span class="stamp-icon">🏝️</span>
+                    <strong>5</strong>
+                    <small>Provinces</small>
+                </div>
+                <div class="stamp st2">
+                    <span class="stamp-icon">📍</span>
+                    <strong>30</strong>
+                    <small>Destinations Featured</small>
+                </div>
+                <div class="stamp st3">
+                    <span class="stamp-icon">🤿</span>
+                    <strong>8</strong>
+                    <small>Activity Types</small>
+                </div>
+                <div class="stamp st4">
+                    <span class="stamp-icon">🏛️</span>
+                    <strong>2</strong>
+                    <small>UNESCO World Heritage Sites</small>
+                </div>
+            </div>
+
+            <!-- the island route: M-I-M-A-RO-PA -->
+            <div class="route" aria-label="The five provinces of MIMAROPA">
+                <a href="destinations.html#occidental-mindoro" class="stop"><i>🌊</i><span>Occidental<br>Mindoro</span></a>
+                <a href="destinations.html#oriental-mindoro" class="stop"><i>🌴</i><span>Oriental<br>Mindoro</span></a>
+                <a href="destinations.html#marinduque" class="stop"><i>🎭</i><span>Marinduque</span></a>
+                <a href="destinations.html#romblon" class="stop"><i>⛰️</i><span>Romblon</span></a>
+                <a href="destinations.html#palawan" class="stop"><i>🐢</i><span>Palawan</span></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= PROVINCE EXPLORER ================= -->
+    <section class="section">
+        <span class="eyebrow center">Explore by Province</span>
+        <h2 class="reveal">The Provinces</h2>
+        <p class="reveal">Every island has its own story. Hover or tap a province to open it.</p>
+
+        <!-- Province video banner.
+             Add Assets Folder/Videos/provinces.mp4 to use your own clip;
+             until then it falls back to mimaropaFeature.mp4 -->
+        <div class="video-banner reveal">
+            <!-- VIDEO: Assets Folder/Videos/provinces.mp4 or mimaropaFeature.mp4 (poster image: Assets Folder/Images/mimaropa-region.jpg) -->
+            <video autoplay muted loop playsinline preload="metadata"
+                poster="../Assets%20Folder/Images/mimaropa-region.jpg">
+                <source src="../Assets%20Folder/Videos/provinces.mp4" type="video/mp4">
+                <source src="../Assets%20Folder/Videos/mimaropaFeature.mp4" type="video/mp4">
+            </video>
+            <div class="video-caption">
+                <h3>Five Provinces, One Region</h3>
+                <p>Palawan &bull; Mindoro &bull; Marinduque &bull; Romblon</p>
+            </div>
+        </div>
+
+        <div class="accordion reveal">
+
+            <div class="acc-panel ap1" tabindex="0">
+                <!-- PROVINCE PANEL PHOTO: Assets Folder/Images/PalawanProvince.jpg (Palawan) -->
+                <img class="acc-bg" src="../Assets%20Folder/Images/PalawanProvince.jpg" alt="Palawan">
+                <div class="acc-content">
+                    <span class="acc-icon">🐢</span>
+                    <h3>Palawan</h3>
+                    <p>Limestone cliffs, hidden lagoons and world-class reefs.</p>
+                    <a href="destinations.html#palawan">See places &rarr;</a>
+                </div>
+            </div>
+
+            <div class="acc-panel ap2" tabindex="0">
+                <!-- PROVINCE PANEL PHOTO: Assets Folder/Images/OccidentalMindoroProvince.jpg (Occidental Mindoro) -->
+                <img class="acc-bg" src="../Assets%20Folder/Images/OccidentalMindoroProvince.jpg"
+                    alt="Occidental Mindoro">
+                <div class="acc-content">
+                    <span class="acc-icon">🌊</span>
+                    <h3>Occidental Mindoro</h3>
+                    <p>Remote reefs, wild mountains and rare wildlife.</p>
+                    <a href="destinations.html#occidental-mindoro">See places &rarr;</a>
+                </div>
+            </div>
+
+            <div class="acc-panel ap3" tabindex="0">
+                <!-- PROVINCE PANEL PHOTO: Assets Folder/Images/OrientalMindoroProvince.jpg (Oriental Mindoro) -->
+                <img class="acc-bg" src="../Assets%20Folder/Images/OrientalMindoroProvince.jpg" alt="Oriental Mindoro">
+                <div class="acc-content">
+                    <span class="acc-icon">🌴</span>
+                    <h3>Oriental Mindoro</h3>
+                    <p>Famous beaches, diving spots and mountain adventures.</p>
+                    <a href="destinations.html#oriental-mindoro">See places &rarr;</a>
+                </div>
+            </div>
+
+            <div class="acc-panel ap4" tabindex="0">
+                <!-- PROVINCE PANEL PHOTO: Assets Folder/Images/MarinduqueProvince.jpg (Marinduque) -->
+                <img class="acc-bg" src="../Assets%20Folder/Images/MarinduqueProvince.jpg" alt="Marinduque">
+                <div class="acc-content">
+                    <span class="acc-icon">🎭</span>
+                    <h3>Marinduque</h3>
+                    <p>The heart-shaped island of festivals, faith and beaches.</p>
+                    <a href="destinations.html#marinduque">See places &rarr;</a>
+                </div>
+            </div>
+
+            <div class="acc-panel ap5" tabindex="0">
+                <!-- PROVINCE PANEL PHOTO: Assets Folder/Images/RomblonProvince.jpg (Romblon) -->
+                <img class="acc-bg" src="../Assets%20Folder/Images/RomblonProvince.jpg" alt="Romblon">
+                <div class="acc-content">
+                    <span class="acc-icon">⛰️</span>
+                    <h3>Romblon</h3>
+                    <p>The marble islands of beaches, forts and wild mountains.</p>
+                    <a href="destinations.html#romblon">See places &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FEATURED (polaroids) ================= -->
+    <section class="polaroid-band">
+        <div class="section">
+            <span class="eyebrow center">Postcards from the Islands</span>
+            <h2 class="reveal">Featured Destinations</h2>
+
+            <div class="polaroids">
+
+                <a href="destinations.html#palawan" class="polaroid reveal">
+                    <!-- IMAGE: Assets Folder/Images/puerto-princesa.jpg (Puerto Princesa) -->
+                    <img src="../Assets%20Folder/Images/puerto-princesa.jpg" alt="Puerto Princesa">
+                    <span class="pol-title">Puerto Princesa</span>
+                    <span class="pol-sub">Explore the natural beauty of Palawan.</span>
+                </a>
+
+                <a href="destinations.html#palawan" class="polaroid reveal">
+                    <!-- IMAGE: Assets Folder/Images/elnido.jpg (El Nido) -->
+                    <img src="../Assets%20Folder/Images/elnido.jpg" alt="El Nido">
+                    <span class="pol-title">El Nido</span>
+                    <span class="pol-sub">Islands, lagoons, and beaches.</span>
+                </a>
+
+                <a href="destinations.html#marinduque" class="polaroid reveal">
+                    <!-- IMAGE: Assets Folder/Images/marinduque.jpg (Marinduque) -->
+                    <img src="../Assets%20Folder/Images/marinduque.jpg" alt="Marinduque">
+                    <span class="pol-title">Marinduque</span>
+                    <span class="pol-sub">Festivals, faith, and heritage.</span>
+                </a>
+
+                <a href="destinations.html#romblon" class="polaroid reveal">
+                    <!-- IMAGE: Assets Folder/Images/romblon.jpg (Romblon) -->
+                    <img src="../Assets%20Folder/Images/romblon.jpg" alt="Romblon">
+                    <span class="pol-title">Romblon</span>
+                    <span class="pol-sub">Marble, forts, and quiet beaches.</span>
+                </a>
+
+                <a href="destinations.html#oriental-mindoro" class="polaroid reveal">
+                    <!-- IMAGE: Assets Folder/Images/mindoro.jpg (Mindoro) -->
+                    <img src="../Assets%20Folder/Images/mindoro.jpg" alt="Mindoro">
+                    <span class="pol-title">Mindoro</span>
+                    <span class="pol-sub">Mountains, beaches, and forests.</span>
+                </a>
+
+            </div>
+
+            <p class="center-link reveal">
+                <a href="destinations.html" class="button">See All 30 Destinations</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= BENTO: EXPLORE BY INTEREST ================= -->
+    <section class="section">
+        <span class="eyebrow center">What Do You Love?</span>
+        <h2 class="reveal">Explore by Interest</h2>
+        <p class="reveal">Pick a path and start exploring.</p>
+
+        <div class="bento">
+
+            <a href="destinations.html" class="tile t-big bt1 reveal">
+                <!-- INTEREST TILE VIDEO: Assets Folder/Videos/mimaropaFeature.mp4 or mimaropa.mp4 (poster image: Assets Folder/Images/elnido.jpg) -->
+                <video class="tile-bg" autoplay muted loop playsinline preload="metadata"
+                    poster="../Assets%20Folder/Images/elnido.jpg">
+                    <source src="../Assets%20Folder/Videos/mimaropaFeature.mp4" type="video/mp4">
+                    <source src="../Assets%20Folder/Videos/mimaropa.mp4" type="video/mp4">
+                </video>
+                <h3>Destinations</h3>
+                <p>From El Nido's lagoons to Apo Reef and Tres Reyes, browse 30 places across five provinces.</p>
+                <span class="tile-go">Browse &rarr;</span>
+            </a>
+
+            <a href="activities.html#water" class="tile bt2 reveal">
+                <!-- INTEREST TILE PHOTO: Assets Folder/Images/Diving.jpg -->
+                <img class="tile-bg" src="../Assets%20Folder/Images/Diving.jpg" alt="">
+                <h3>Diving</h3>
+                <span class="tile-go">&rarr;</span>
+            </a>
+
+            <a href="activities.html#nature" class="tile bt3 reveal">
+                <!-- INTEREST TILE PHOTO: Assets Folder/Images/Nature.jpg -->
+                <img class="tile-bg" src="../Assets%20Folder/Images/Nature.jpg" alt="">
+                <h3>Nature</h3>
+                <span class="tile-go">&rarr;</span>
+            </a>
+
+            <a href="history.html" class="tile t-wide bt4 reveal">
+                <!-- INTEREST TILE PHOTO: Assets Folder/Images/History&Culture.jpg -->
+                <img class="tile-bg" src="../Assets%20Folder/Images/History&Culture.jpg" alt="">
+                <h3>History &amp; Culture</h3>
+                <p>Timeline, people, festivals and crafts.</p>
+                <span class="tile-go">&rarr;</span>
+            </a>
+
+            <a href="activities.html#food" class="tile t-wide bt5 reveal">
+                <!-- INTEREST TILE PHOTO: Assets Folder/Images/FoodExperiences.jpg -->
+                <img class="tile-bg" src="../Assets%20Folder/Images/FoodExperiences.jpg" alt="">
+                <h3>Food Experiences</h3>
+                <p>Fresh seafood, markets and island flavors.</p>
+                <span class="tile-go">&rarr;</span>
+            </a>
+
+            <a href="plan-trip.html" class="tile t-wide bt6 reveal">
+                <!-- INTEREST TILE PHOTO: Assets Folder/Images/PlanTrip-back.jpg -->
+                <img class="tile-bg" src="../Assets%20Folder/Images/PlanTrip-back.jpg" alt="">
+                <h3>Plan Your Trip</h3>
+                <p>Itineraries, budgets, packing and FAQs.</p>
+                <span class="tile-go">&rarr;</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ================= MUST-SEE CAROUSEL ================= -->
+    <section class="carousel-band">
+        <div class="carousel-head">
+            <span class="eyebrow center">Swipe Through</span>
+            <h2 class="reveal">Must-See Highlights</h2>
+            <p class="swipe-hint">&larr; Swipe or scroll sideways &rarr;</p>
+        </div>
+
+        <div class="carousel">
+
+            <article class="slide">
+                <!-- MUST-SEE SLIDE PHOTO: Assets Folder/Images/UNESCO-UndergroundRiver.jpg -->
+                <img class="slide-bg" src="../Assets%20Folder/Images/UNESCO-UndergroundRiver.jpg" alt="">
+                <span class="slide-tag">Palawan</span>
+                <h3>Underground River</h3>
+                <p>A UNESCO World Heritage Site near Puerto Princesa.</p>
+            </article>
+
+            <article class="slide">
+                <!-- MUST-SEE SLIDE PHOTO: Assets Folder/Images/ApoReef.jpg -->
+                <img class="slide-bg" src="../Assets%20Folder/Images/ApoReef.jpg" alt="">
+                <span class="slide-tag">Occidental Mindoro</span>
+                <h3>Apo Reef</h3>
+                <p>One of the largest coral reef systems in the Philippines.</p>
+            </article>
+
+            <article class="slide">
+                <!-- MUST-SEE SLIDE PHOTO: Assets Folder/Images/TresReyesIslands.jpg -->
+                <img class="slide-bg" src="../Assets%20Folder/Images/TresReyesIslands.jpg" alt="">
+                <span class="slide-tag">Marinduque</span>
+                <h3>Tres Reyes Islands</h3>
+                <p>Three small islands for snorkeling and quiet island days.</p>
+            </article>
+
+            <article class="slide">
+                <!-- MUST-SEE SLIDE PHOTO: Assets Folder/Images/FortSanAndres.jpg -->
+                <img class="slide-bg" src="../Assets%20Folder/Images/FortSanAndres.jpg" alt="">
+                <span class="slide-tag">Romblon</span>
+                <h3>Fort San Andres</h3>
+                <p>A historic hilltop fort overlooking the harbor.</p>
+            </article>
+
+            <article class="slide">
+                <!-- MUST-SEE SLIDE PHOTO: Assets Folder/Images/CoronWrecks.jpg -->
+                <img class="slide-bg" src="../Assets%20Folder/Images/CoronWrecks.jpg" alt="">
+                <span class="slide-tag">Palawan</span>
+                <h3>Coron Wrecks</h3>
+                <p>Turquoise lakes and World War II shipwrecks for divers.</p>
+            </article>
+
+            <article class="slide">
+                <!-- MUST-SEE SLIDE PHOTO: Assets Folder/Images/MorionesFestival.jpg -->
+                <img class="slide-bg" src="../Assets%20Folder/Images/MorionesFestival.jpg" alt="">
+                <span class="slide-tag">Marinduque</span>
+                <h3>Moriones Festival</h3>
+                <p>Masks, costumes and street plays during Holy Week.</p>
+            </article>
+
+            <article class="slide">
+                <!-- MUST-SEE SLIDE PHOTO: Assets Folder/Images/SibuyanIsland.jpg -->
+                <img class="slide-bg" src="../Assets%20Folder/Images/SibuyanIsland.jpg" alt="">
+                <span class="slide-tag">Romblon</span>
+                <h3>Sibuyan Island</h3>
+                <p>Called the "Galapagos of Asia" for its wildlife.</p>
+            </article>
+
+            <article class="slide">
+                <!-- MUST-SEE SLIDE PHOTO: Assets Folder/Images/MountHalcon.jpg -->
+                <img class="slide-bg" src="../Assets%20Folder/Images/MountHalcon.jpg" alt="">
+                <span class="slide-tag">Oriental Mindoro</span>
+                <h3>Mount Halcon</h3>
+                <p>A challenging trek for experienced hikers.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ================= PLAN IN 4 STEPS ================= -->
+    <section class="section">
+        <span class="eyebrow center">Easy as 1-2-3-4</span>
+        <h2 class="reveal">Plan Your Trip in 4 Steps</h2>
+
+        <div class="steps">
+
+            <a href="destinations.html" class="step reveal">
+                <span class="step-num">1</span>
+                <h3>Pick a Place</h3>
+                <p>Browse the provinces and choose where to go.</p>
+            </a>
+
+            <a href="activities.html" class="step reveal">
+                <span class="step-num">2</span>
+                <h3>Choose Activities</h3>
+                <p>Adventure, culture, food, or relaxation.</p>
+            </a>
+
+            <a href="plan-trip.html#when" class="step reveal">
+                <span class="step-num">3</span>
+                <h3>Time Your Visit</h3>
+                <p>Check the best months and how to get there.</p>
+            </a>
+
+            <a href="plan-trip.html#packing" class="step reveal">
+                <span class="step-num">4</span>
+                <h3>Pack &amp; Go</h3>
+                <p>Use the checklist and start your adventure.</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="pass-band">
+        <!-- BOARDING PASS BACKGROUND PHOTO: Assets Folder/Images/PlanTrip-back.jpg -->
+        <img class="pass-bg" src="../Assets%20Folder/Images/PlanTrip-back.jpg" alt="">
+
+        <div class="pass reveal">
+
+            <div class="pass-main">
+                <span class="pass-label">✈ Boarding Pass &bull; Region IV-B</span>
+                <h2>Your Island Adventure Awaits</h2>
+
+                <div class="pass-route">
+                    <div><small>From</small><strong>Anywhere</strong></div>
+                    <span class="pass-line">🛥️</span>
+                    <div><small>To</small><strong>MIMAROPA</strong></div>
+                </div>
+
+                <div class="pass-facts">
+                    <div><small>Provinces</small><b>5</b></div>
+                    <div><small>Best Months</small><b>Dec &ndash; May</b></div>
+                    <div><small>Trip Length</small><b>3&ndash;7 Days</b></div>
+                </div>
+            </div>
+
+            <div class="pass-stub">
+                <p>Itineraries, budgets, packing list and FAQs are ready for you.</p>
+                <a href="plan-trip.html" class="button">Plan Your Trip</a>
+                <span class="barcode" aria-hidden="true"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Gonzaga MIMAROPA Tourism Website</p>
+        <p>Email: mimaropa@example.com</p>
+    </footer>
+
+</body>
+
+</html>
